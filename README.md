@@ -9,7 +9,7 @@
 ## 使用方法
 
 ```go
-pool := New(2, 1) // 初始化一个总数为2，并发数为1的协程池
+pool := New(2, 4) // 初始化一个总数为4，并发数为2的协程池
 pool.Submit(func() {    
 	time.Sleep(time.Second) // 提交任务
 })
